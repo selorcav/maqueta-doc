@@ -1,0 +1,88 @@
+nav
+	background-color: $primary-color
+	height: 80px
+	width: 100%
+	z-index: 3
+
+.docode-logo
+	display: inline-block
+	padding: 28px
+	img
+		height: 30px
+		transition: .3s
+		+for-phone-only
+			height: 23px
+
+
+
+nav
+	position: fixed
+	ul
+		float: right
+		margin-right: 20px
+		+for-responsive1
+			position: fixed
+			width: 100%
+			height: 100vh
+			background: $primary-color
+			top: 80px
+			left: -100%
+			text-align: center
+			transition: all .5s
+
+		li
+			display: inline-block
+			line-height: 80px
+			margin: 0 2px
+			+for-responsive1
+				display: block
+			a
+				color: white
+				font-size: .9em
+				padding: 7px 13px
+				border-radius: 3px
+				// transition: .2s
+				+for-responsive1
+					font-size: 20px
+				&:hover, &:focus
+					text-decoration: none
+					color: white
+					background-color: $secondary-color
+					+for-responsive1
+						color: $secondary-color
+						background: none
+
+
+.checkbtn
+	font-size: 30px
+	color: white
+	float: right
+	line-height: 80px
+	margin-right: 40px
+	cursor: pointer
+	display: none
+	+for-responsive1
+		display: block
+	
+
+#check
+	display: none
+			
+#check:checked ~ ul
+	left: 0
+
+.btn-login
+	background-color: $primary-color
+	color: white
+	border: solid 1px white
+	transition: .3s
+	&:hover
+		background-color: white
+
+.btn-register
+	background-color: $secondary-color
+	color: white
+	transition: .3s
+	&:hover
+		background-color: #ff1e28
+		color: white

@@ -1,0 +1,657 @@
+nav {
+  background-color: #37393A;
+  height: 80px;
+  width: 100%;
+  z-index: 3;
+}
+
+.docode-logo {
+  display: inline-block;
+  padding: 28px;
+}
+
+.docode-logo img {
+  height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 599px) {
+  .docode-logo img {
+    height: 23px;
+  }
+}
+
+nav {
+  position: fixed;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+@media (max-width: 928px) {
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #37393A;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+
+@media (max-width: 928px) {
+  nav ul li {
+    display: block;
+  }
+}
+
+nav ul li a {
+  color: white;
+  font-size: .9em;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+@media (max-width: 928px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #FF5159;
+}
+
+@media (max-width: 928px) {
+  nav ul li a:hover, nav ul li a:focus {
+    color: #FF5159;
+    background: none;
+  }
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 928px) {
+  .checkbtn {
+    display: block;
+  }
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+.btn-login {
+  background-color: #37393A;
+  color: white;
+  border: solid 1px white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-login:hover {
+  background-color: white;
+}
+
+.btn-register {
+  background-color: #FF5159;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-register:hover {
+  background-color: #ff1e28;
+  color: white;
+}
+
+main {
+  min-height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EDEDED;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main-bg {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-bg h1 {
+  color: white;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+@media (max-width: 767px) {
+  main .main-bg h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 6em;
+  }
+}
+
+main .container {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .container .col-md-8 {
+  margin-top: -40vh;
+}
+
+@media (max-width: 767px) {
+  main .container .col-md-8 {
+    margin-top: -20vh;
+  }
+}
+
+main .container img {
+  width: 100%;
+}
+
+main .container hr {
+  width: 50%;
+  margin: 0 auto;
+  border-top: #37393A solid 1px;
+}
+
+main .container h2 {
+  padding: 1em 0;
+}
+
+main .container p {
+  font-size: 1.2em;
+  padding: 3em 0;
+  width: 100%;
+}
+
+main .text-red {
+  color: #FF5159;
+}
+
+main .logo-min {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px;
+}
+
+.content {
+  margin-top: 8em;
+}
+
+.content h2 {
+  padding: 4rem 8rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .content h2 {
+    padding: 3rem;
+  }
+}
+
+.content p {
+  font-size: 1.2em;
+  padding: 4rem 8rem;
+}
+
+@media (max-width: 767px) {
+  .content p {
+    padding: 3rem;
+  }
+}
+
+.content .row .col-lg-6 {
+  margin-bottom: 3em;
+}
+
+.content .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .content .d-flex {
+    display: block;
+  }
+}
+
+.content hr {
+  border-top: #37393A solid 1px;
+}
+
+.content .content-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 10em;
+}
+
+.content .content-icon img {
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  .content .content-icon img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.content .content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.content .content-info p {
+  font-size: 1.3em;
+}
+
+@media (max-width: 992px) {
+  .content .content-info p {
+    padding: 4rem;
+  }
+}
+
+.plans {
+  background-color: #EDEDED;
+  margin-top: 15rem;
+  position: relative;
+  min-height: 50vh;
+}
+
+.plans .col-card {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .plans .col-card {
+    margin-top: 18rem;
+  }
+}
+
+.plans .plan-bg-card {
+  background-color: #37393A;
+  position: absolute;
+  margin-left: -6rem;
+  margin-top: 6rem;
+  width: 65%;
+  height: 100%;
+  z-index: 0;
+  -webkit-box-shadow: -2px 2px 6px gray;
+          box-shadow: -2px 2px 6px gray;
+}
+
+.plans .plan-card {
+  position: relative;
+  margin-top: -10rem;
+  background-color: #FF5159;
+  padding: 5.5rem 3rem;
+  width: 70%;
+  z-index: 1;
+  -webkit-box-shadow: -1px 1px 4px black;
+          box-shadow: -1px 1px 4px black;
+  min-height: 310px;
+}
+
+@media (max-width: 599px) {
+  .plans .plan-card {
+    width: 85%;
+  }
+}
+
+.plans .plan-card p {
+  color: white;
+  font-size: 1.2em;
+}
+
+.plans .plan-card h4 {
+  color: white;
+}
+
+.plans .plan-card hr {
+  width: 50%;
+}
+
+.plans .plan-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6em;
+}
+
+.plans .plan-button button {
+  color: white;
+  background: #FF5159;
+  font-size: 1.2em;
+  padding: .7em 1em;
+  margin-bottom: 5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.plans .plan-button button:hover {
+  background-color: #ff1e28;
+}
+
+.clients {
+  padding: 6em 0;
+}
+
+.clients h3 {
+  text-align: center;
+}
+
+.clients hr {
+  width: 50%;
+  margin: 2rem auto 6rem;
+}
+
+.clients .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .clients .row {
+    display: block;
+  }
+}
+
+.clients .col-md-3 {
+  padding: 6rem;
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .clients .col-md-3 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .clients .col-md-3 {
+    padding: 2rem 6rem;
+  }
+}
+
+.clients img {
+  width: 100%;
+}
+
+.register {
+  background-image: url("../assets/banner-registro.png");
+  background-position: center;
+  background-size: cover;
+  padding: 7em 0;
+}
+
+.register p {
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+}
+
+.register .register-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3em;
+}
+
+.register .register-button .btn {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  font-size: 1.2em;
+  padding: .8em 1.5em;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.register .register-button .btn:hover {
+  background-color: white;
+  color: #FF5159;
+}
+
+.contact {
+  background-color: #37393A;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.contact form {
+  padding: 3rem;
+}
+
+.contact p {
+  color: white;
+  font-size: 1.2em;
+  padding: 2rem;
+}
+
+.contact h3 {
+  color: white;
+  padding: 1rem;
+}
+
+.contact label {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact input {
+  background-color: #696F72;
+  margin: 30px 0;
+}
+
+.contact ::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact :-ms-input-placeholder {
+  color: white;
+}
+
+.contact ::-ms-input-placeholder {
+  color: white;
+}
+
+.contact ::placeholder {
+  color: white;
+}
+
+.contact textarea {
+  margin: 20px 0;
+  background-color: #696F72;
+}
+
+.contact .send-button button {
+  padding: 1rem 3em;
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact .send-button button:hover {
+  background-color: white;
+  color: #37393A;
+}
+
+footer {
+  position: relative;
+  background-color: #4E5558;
+  padding: 6em 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3em 0;
+  }
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer .redband {
+  height: 20px;
+  background: #FF5159;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+footer .row {
+  margin: 0;
+  padding: 0;
+}
+
+footer .row .col-sm-4 {
+  margin-top: 2em;
+}
+
+footer img {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  footer img {
+    width: 50%;
+  }
+}
+
+footer ul li {
+  color: white;
+  font-size: 1.2em;
+  padding: .5rem 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: #37393A;
+}
+
+.d-flex-jcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
