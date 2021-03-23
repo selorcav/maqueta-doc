@@ -1,0 +1,174 @@
+.main-container
+    .main-title
+        background: $secondary-color
+        min-height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 0 2rem
+        h1
+            color: white
+            padding: 1rem 0
+            font-weight: bold
+        p
+            color: white
+    &_card
+        border-radius: 5px
+        min-height: 200px
+        border-radius: 5px
+        background: white
+        margin-top: -100px
+        margin-left: auto
+        margin-right: auto
+        box-shadow: -2px 2px 6px gray
+        width: fit-content
+        position: relative
+        min-height: 600px
+        overflow: hidden
+        margin-bottom: 100px
+        +for-ipad
+            min-height: 900px
+        .container
+            position: relative
+
+        .card
+            box-shadow: -2px 2px 6px gray
+            margin: 0
+            border-radius: 10px !important
+            overflow: hidden
+            transition: .3s
+            background: white
+            margin: 6rem 0
+            min-height: 300px
+            
+
+            &:hover
+                box-shadow: -2px 2px 8px #555
+            &-title
+                background: $secondary-color
+                h3
+                    padding: 2.5rem
+                    color: white
+                    font-weight: bold
+                    text-align: center
+                    font-size: 2.5rem
+            &-content
+                padding: 2.5rem
+                display: flex
+                flex-direction: column
+                p
+                    padding: 1rem 0
+                    color: $dark-gray
+                .btn
+                    align-self: flex-end
+                    border-radius: 15px
+                    transition: .3s
+                    background: $secondary-color
+                    color: white
+                    &:hover
+                        color: $secondary-color
+                        border: solid 1px $secondary-color
+                        background: white
+        .ml-card
+            +re-for-ipad
+                margin-left: 5rem
+        .mr-card
+            +re-for-ipad
+                margin-right: 5rem
+
+
+        form
+            padding: 3rem
+            input
+                margin: 2rem 0
+
+.steps
+    padding: 3rem 5rem
+
+
+.pointer
+    width: 100%
+    height: 40px
+    position: relative
+    background: $secondary-color
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-left: 2.5rem
+    margin-top: 1rem
+    h5
+        color: white
+    &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 0
+        height: 0
+        border-left: 20px solid white
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent
+    &:before
+        content: ""
+        position: absolute
+        right: -20px
+        bottom: 0
+        width: 0
+        height: 0
+        border-left: 20px solid $secondary-color
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent
+
+.payment-btn
+    display: flex
+    justify-content: flex-end
+    .btn
+        border-radius: 15px
+        border: solid 1px $secondary-color
+        color: $secondary-color
+        transition: .3s
+        background: white
+        margin-bottom: 3rem
+        &:hover
+            color: white
+            background: $secondary-color
+.payment-btn-step2
+    justify-content: space-between
+
+.bf-step
+    background: #ffbcc0
+    &::before
+        border-left: 20px solid #ffbcc0
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent
+
+
+.step1
+    left: 0
+    position: absolute
+    transition: .5s
+    width: 100%
+.step2
+    transition: .5s
+    left: 100vw
+    position: absolute
+    width: 100%
+    h3
+        color: $secondary-color
+        font-weight: bold
+        margin-bottom: 2rem
+    label
+        margin: 5px 0
+        font-size: 1.5em
+        display: flex
+        align-items: center
+        padding: 0 2rem
+        font-weight: bold
+        color: $secondary-color
+        justify-content: space-between
+    p
+        margin: 1.5rem 0
+    .input-radio
+        margin: 0
+        position: relative !important

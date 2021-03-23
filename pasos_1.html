@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/sass/style.css">
+  <title>DOCODE</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label class="checkbtn" for="check">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="docode-logo">
+      <img src="src/assets/logo.svg" alt="">
+    </div>
+    <!-- <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#que-es">¿Qué es?</a></li>
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <ul>
+        <li><button type="button" class="btn btn-login">Iniciar Sesión</button></li>
+        <li><button type="button" class="btn btn-register">Registrarme</button></li>
+      </ul>
+    </ul> -->
+  </nav>
+  <div class="main-container">
+    <div class="main-title">
+      <h1>EXTENDER TU PLAN</h1>
+      <p>Ahora que has decidido contratar DOCODE, sigue los pasos para finalizar tu compra</p>
+    </div>
+    <div class="main-container_card">
+      <div class="container">
+
+        <div class="steps">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="pointer " id="facturacion">
+                <h5>DATOS DE FACTURACIÓN</h5>
+              </div>
+            </div>
+            <div class="col-sm-4" >
+              <div class="pointer bf-step" id="plan">
+                <h5>SELECCIÓN DE PLAN</h5>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pointer bf-step" id="pago">
+                <h5>MÉTODOS DE PAGO</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="step1" action="">
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Nombre Completo">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Identificación">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Giro">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Dirección">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Teléfono">
+            </div>
+          </div>
+          <div class="payment-btn">
+            <button class="btn next1">Siguiente</button>
+          </div>
+        </form>
+
+
+        <form class="step2" action="">
+          <div class="col-md-6 col-md-offset-3">
+            <h3> Tabla de precios de Bolsa de Palabras </h3>
+            <p>Una bolsa de palabras, que dura 6 meses o hasta que las palabras se agoten.</p>
+
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>20.000 palabras</span> <span>$24.990</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>50.000 palabras</span> <span>$59.990</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>125.000 palabras</span> <span>$119.990</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>400.000 palabras</span> <span>$354.990</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>800.000 palabras</span> <span>$544.990</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                  checked>
+                <span>1.400.000 palabras</span> <span>$759.990</span>
+              </label>
+            </div>
+
+            <p>* Todos los precios incluyen IVA.</p>
+
+            <div class="payment-btn payment-btn-step2">
+              <button class="btn back1">Regresar</button>
+              <button class="btn">Siguiente</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $( ".next1" ).click(function(event) {
+        event.preventDefault();
+        $(".step1").css("left", "-100vw");
+        $(".step2").css("left", "0");
+        $("#facturacion").addClass("bf-step")
+        $("#plan").removeClass("bf-step")
+
+      });
+      $( ".back1" ).click(function(event) {
+        event.preventDefault();
+        $(".step1").css("left", "0");
+        $(".step2").css("left", "100vw");
+        $("#facturacion").removeClass("bf-step")
+        $("#plan").addClass("bf-step")
+      });
+
+
+    });
+  </script>
+</body>
+
+</html>
