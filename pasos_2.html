@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/sass/style.css">
+  <title>DOCODE</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label class="checkbtn" for="check">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="docode-logo">
+      <img src="src/assets/logo.svg" alt="">
+    </div>
+    <!-- <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#que-es">¿Qué es?</a></li>
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <ul>
+        <li><button type="button" class="btn btn-login">Iniciar Sesión</button></li>
+        <li><button type="button" class="btn btn-register">Registrarme</button></li>
+      </ul>
+    </ul> -->
+  </nav>
+  <div class="main-container">
+    <div class="main-title">
+      <h1>EXTENDER TU PLAN</h1>
+      <p>Ahora que has decidido contratar DOCODE, sigue los pasos para finalizar tu compra</p>
+    </div>
+    <div class="main-container_card">
+      <div class="container">
+
+        <div class="steps">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="pointer " id="facturacion">
+                <h5>DATOS DE FACTURACIÓN</h5>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pointer bf-step" id="plan">
+                <h5>SELECCIÓN DE PLAN</h5>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pointer bf-step" id="pago">
+                <h5>MÉTODOS DE PAGO</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="step1" action="">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Nombre Completo">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Identificación">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Giro">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Dirección">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Teléfono">
+                </div>
+              </div>
+              <div class="payment-btn">
+                <button class="btn next1">Siguiente</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+        <form class="step2" action="">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="monthly-options">
+
+                <div class="row">
+                  <div class="col-xs-8 col-xs-offset-2">
+
+                    <div class="row">
+                      <div class="col-sm-3 ">
+                        <div class="monthly-options-item border-rl active" id="tab1">
+                          <h5>5 meses</h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="monthly-options-item" id="tab2">
+                          <h5>6 a 11 meses</h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="monthly-options-item" id="tab3">
+                          <h5>12 a 23 meses</h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="monthly-options-item border-rr" id="tab4">
+                          <h5>24 meses o más</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- CARD OPTIONS -->
+
+                <div class="card-options" id="cardoptions1">
+
+                  <div id="options1">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$64.990</h3>
+                          <p>*100.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$104.990</h3>
+                          <p>*200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$184.990</h3>
+                          <p>*400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$244.990</h3>
+                          <p>*600.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="options2">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$324.990</h3>
+                          <p>*800.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$389.990</h3>
+                          <p>*1.000.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$474.990</h3>
+                          <p>*1.200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$544.990</h3>
+                          <p>*1.400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="tab-options">
+                    <ul>
+                      <li class="active" id="taboptions1"></li>
+                      <li id="taboptions2"></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <!-- FIN CARD OPTION1 -->
+
+                <div class="card-options d-none" id="cardoptions2">
+
+                  <div id="options3">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$59.990</h3>
+                          <p>*100.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$99.990</h3>
+                          <p>*200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$177.990</h3>
+                          <p>*400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$237.990</h3>
+                          <p>*600.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="options4">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$314.990</h3>
+                          <p>*800.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$379.990</h3>
+                          <p>*1.000.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$464.990</h3>
+                          <p>*1.200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$534.990</h3>
+                          <p>*1.400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="tab-options">
+                    <ul>
+                      <li class="active" id="taboptions3"></li>
+                      <li id="taboptions4"></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <!-- FIN CARD OPTION2 -->
+
+                <div class="card-options d-none" id="cardoptions3">
+
+                  <div id="options5">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$54.990</h3>
+                          <p>*100.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$94.990</h3>
+                          <p>*200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$170.990</h3>
+                          <p>*400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$230.990</h3>
+                          <p>*600.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="options6">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$304.990</h3>
+                          <p>*800.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$369.990</h3>
+                          <p>*1.000.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$454.990</h3>
+                          <p>*1.200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$524.990</h3>
+                          <p>*1.400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="tab-options">
+                    <ul>
+                      <li class="active" id="taboptions5"></li>
+                      <li id="taboptions6"></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <!-- FIN CARD OPTION3 -->
+
+                <div class="card-options d-none" id="cardoptions4">
+
+                  <div id="options7">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$49.990</h3>
+                          <p>*100.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$89.990</h3>
+                          <p>*200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$163.990</h3>
+                          <p>*400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$223.990</h3>
+                          <p>*600.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="options8">
+                    <div class="row">
+
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$294.990</h3>
+                          <p>*800.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$359.990</h3>
+                          <p>*1.000.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$444.990</h3>
+                          <p>*1.200.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card-options-item">
+                          <h3>$514.990</h3>
+                          <p>*1.400.000 Palabras mensuales</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="tab-options">
+                    <ul>
+                      <li class="active" id="taboptions7"></li>
+                      <li id="taboptions8"></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <!-- FIN CARD OPTION4 -->
+
+              </div>
+
+
+
+              <div class="payment-btn payment-btn-step2">
+                <button class="btn back1">Regresar</button>
+                <button class="btn">Siguiente</button>
+              </div>
+
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".next1").click(function (event) {
+        event.preventDefault();
+        $(".step1").css("left", "-100vw");
+        $(".step2").css("left", "0");
+        $("#facturacion").addClass("bf-step")
+        $("#plan").removeClass("bf-step")
+
+      });
+      $(".back1").click(function (event) {
+        event.preventDefault();
+        $(".step1").css("left", "0");
+        $(".step2").css("left", "100vw");
+        $("#facturacion").removeClass("bf-step")
+        $("#plan").addClass("bf-step")
+      });
+
+      // seleccion plan
+
+      $("#taboptions1").click(function (event) {
+        event.preventDefault();
+        $("#options1").css("left", "0");
+        $("#options2").css("right", "-100%");
+        $("#taboptions2").removeClass("active")
+        $("#taboptions1").addClass("active")
+      });
+
+      $("#taboptions2").click(function (event) {
+        event.preventDefault();
+        $("#options1").css("left", "-100%");
+        $("#options2").css("right", "0");
+        $("#taboptions1").removeClass("active")
+        $("#taboptions2").addClass("active")
+      });
+
+      $("#taboptions3").click(function (event) {
+        event.preventDefault();
+        $("#options3").css("left", "0");
+        $("#options4").css("right", "-100%");
+        $("#taboptions4").removeClass("active")
+        $("#taboptions3").addClass("active")
+      });
+
+      $("#taboptions4").click(function (event) {
+        event.preventDefault();
+        $("#options3").css("left", "-100%");
+        $("#options4").css("right", "0");
+        $("#taboptions3").removeClass("active")
+        $("#taboptions4").addClass("active")
+      });
+
+      $("#taboptions5").click(function (event) {
+        event.preventDefault();
+        $("#options5").css("left", "0");
+        $("#options6").css("right", "-100%");
+        $("#taboptions6").removeClass("active")
+        $("#taboptions5").addClass("active")
+      });
+
+      $("#taboptions6").click(function (event) {
+        event.preventDefault();
+        $("#options5").css("left", "-100%");
+        $("#options6").css("right", "0");
+        $("#taboptions5").removeClass("active")
+        $("#taboptions6").addClass("active")
+      });
+
+      $("#taboptions7").click(function (event) {
+        event.preventDefault();
+        $("#options7").css("left", "0");
+        $("#options8").css("right", "-100%");
+        $("#taboptions8").removeClass("active")
+        $("#taboptions7").addClass("active")
+      });
+
+      $("#taboptions8").click(function (event) {
+        event.preventDefault();
+        $("#options7").css("left", "-100%");
+        $("#options8").css("right", "0");
+        $("#taboptions7").removeClass("active")
+        $("#taboptions8").addClass("active")
+      });
+
+
+      // tabs
+
+      $("#tab1").click(function (event) {
+        event.preventDefault();
+        $("#cardoptions1").removeClass("d-none")
+        $("#cardoptions2").addClass("d-none")
+        $("#cardoptions3").addClass("d-none")
+        $("#cardoptions4").addClass("d-none")
+
+        $("#tab1").addClass("active")
+        $("#tab2").removeClass("active")
+        $("#tab3").removeClass("active")
+        $("#tab4").removeClass("active")
+      });
+
+      $("#tab2").click(function (event) {
+        event.preventDefault();
+        $("#cardoptions1").addClass("d-none")
+        $("#cardoptions2").removeClass("d-none")
+        $("#cardoptions3").addClass("d-none")
+        $("#cardoptions4").addClass("d-none")
+
+
+        $("#tab1").removeClass("active")
+        $("#tab2").addClass("active")
+        $("#tab3").removeClass("active")
+        $("#tab4").removeClass("active")
+
+      });
+
+      $("#tab3").click(function (event) {
+        event.preventDefault();
+        $("#cardoptions1").addClass("d-none")
+        $("#cardoptions2").addClass("d-none")
+        $("#cardoptions3").removeClass("d-none")
+        $("#cardoptions4").addClass("d-none")
+
+        $("#tab1").removeClass("active")
+        $("#tab2").removeClass("active")
+        $("#tab3").addClass("active")
+        $("#tab4").removeClass("active")
+
+      });
+
+      $("#tab4").click(function (event) {
+        event.preventDefault();
+        $("#cardoptions1").addClass("d-none")
+        $("#cardoptions2").addClass("d-none")
+        $("#cardoptions3").addClass("d-none")
+        $("#cardoptions4").removeClass("d-none")
+
+        $("#tab1").removeClass("active")
+        $("#tab2").removeClass("active")
+        $("#tab3").removeClass("active")
+        $("#tab4").addClass("active")
+
+      });
+      
+
+
+
+    });
+  </script>
+</body>
+
+</html>

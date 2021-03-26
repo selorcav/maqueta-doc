@@ -18,7 +18,7 @@
         min-height: 200px
         border-radius: 5px
         background: white
-        margin-top: -100px
+        margin-top: -80px
         margin-left: auto
         margin-right: auto
         box-shadow: -2px 2px 6px gray
@@ -172,3 +172,105 @@
     .input-radio
         margin: 0
         position: relative !important
+
+
+.monthly-options
+    margin-bottom: 2em
+    .col-sm-3
+        padding: 0
+    h5
+        text-align: center
+        color: $secondary-color
+        
+    &-item
+        background: white
+        border: solid 1px $secondary-color
+        padding: 1rem
+        cursor: pointer
+        transition: .3s
+        +for-responsive2
+            min-height: 52px
+        +for-ipad
+            min-height: auto
+            margin: 5px 0
+            border-radius: 20px
+        &:hover
+            background: $secondary-color
+            h5
+                color: white !important
+
+    .active
+        background-color: $secondary-color
+        h5
+            color: white !important
+
+    
+    .border-rl
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+
+    .border-rr
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+
+
+    .card-options
+        margin: 2rem 0
+        position: relative
+        min-height: 250px
+        width: 100%
+        display: flex
+        justify-content: center
+        overflow: hidden
+        +for-ipad
+            min-height: 330px
+
+    .card-options-item
+        min-height: 200px
+        margin: 5px
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        border-radius: 15px
+        box-shadow: 0px 0px 6px gray
+        transition: .3s
+        padding: 5px
+        &:hover
+            box-shadow: -3px 3px 8px #555
+        +for-ipad
+            min-height: auto
+            height: 68px
+            h3
+                font-size: 2rem
+                margin: 0
+            p
+                font-size: 1rem
+                margin: 0
+
+    #options1, #options2, #options3, #options4, #options5, #options6, #options7, #options8
+        position: absolute
+        transition: .3s
+        width: 100%
+        padding-left: 50px
+        padding-right: 50px
+
+    #options2, #options4, #options6, #options8
+        right: -100%
+
+    .tab-options
+        position: absolute
+        bottom: 0
+        ul
+            display: flex
+            justify-content: center
+        li
+            height: 15px
+            width: 15px
+            border: solid 1px $secondary-color
+            border-radius: 50%
+            margin: 0 5px
+            cursor: pointer
+            transition: .3s
+            &:hover
+                background: $secondary-color
