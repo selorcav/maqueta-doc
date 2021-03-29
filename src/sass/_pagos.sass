@@ -223,7 +223,7 @@
         justify-content: center
         overflow: hidden
         +for-ipad
-            min-height: 330px
+            min-height: 276px
 
     .card-options-item
         min-height: 200px
@@ -235,18 +235,32 @@
         border-radius: 15px
         box-shadow: 0px 0px 6px gray
         transition: .3s
-        padding: 5px
+        padding: 10px
         &:hover
             box-shadow: -3px 3px 8px #555
         +for-ipad
-            min-height: auto
-            height: 68px
+            // min-height: auto
+            // height: 68px
+            height: 168px
+            margin: 4rem 0
+
+
             h3
                 font-size: 2rem
                 margin: 0
             p
                 font-size: 1rem
                 margin: 0
+
+        h1
+            font-size: 3em
+            color: $secondary-color !important
+            font-weight: bold
+        h5
+            font-weight: bold
+
+        p
+            margin: 5px
 
     #options1, #options2, #options3, #options4, #options5, #options6, #options7, #options8
         position: absolute

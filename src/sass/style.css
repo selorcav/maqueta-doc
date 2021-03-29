@@ -987,7 +987,7 @@ footer ul li {
 
 @media (max-width: 767px) {
   .monthly-options .card-options {
-    min-height: 330px;
+    min-height: 276px;
   }
 }
 
@@ -1010,7 +1010,7 @@ footer ul li {
           box-shadow: 0px 0px 6px gray;
   -webkit-transition: .3s;
   transition: .3s;
-  padding: 5px;
+  padding: 10px;
 }
 
 .monthly-options .card-options-item:hover {
@@ -1020,8 +1020,8 @@ footer ul li {
 
 @media (max-width: 767px) {
   .monthly-options .card-options-item {
-    min-height: auto;
-    height: 68px;
+    height: 168px;
+    margin: 4rem 0;
   }
   .monthly-options .card-options-item h3 {
     font-size: 2rem;
@@ -1031,6 +1031,20 @@ footer ul li {
     font-size: 1rem;
     margin: 0;
   }
+}
+
+.monthly-options .card-options-item h1 {
+  font-size: 3em;
+  color: #FF5159 !important;
+  font-weight: bold;
+}
+
+.monthly-options .card-options-item h5 {
+  font-weight: bold;
+}
+
+.monthly-options .card-options-item p {
+  margin: 5px;
 }
 
 .monthly-options #options1, .monthly-options #options2, .monthly-options #options3, .monthly-options #options4, .monthly-options #options5, .monthly-options #options6, .monthly-options #options7, .monthly-options #options8 {
