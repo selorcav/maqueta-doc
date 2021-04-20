@@ -326,6 +326,36 @@ main .logo-min {
   }
 }
 
+.functions {
+  margin: 1rem 0 !important;
+}
+
+.functions img {
+  width: 100%;
+}
+
+.functions h4 {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.functions p {
+  font-size: 12px;
+}
+
+.functions .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
 .plans {
   background-color: #EDEDED;
   margin-top: 15rem;
