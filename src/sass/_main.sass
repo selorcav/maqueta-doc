@@ -45,14 +45,18 @@ main
             padding: 3em 0
             width: 100%
 
-    .text-red
-        color: $secondary-color
-
     .logo-min
         width: 100px
         margin-left: auto
         margin-right: auto
         margin-bottom: -50px
+
+.text-red
+    color: $secondary-color
+.text-bold
+    font-weight: bold
+
+    
 
 /////////
 .content
@@ -121,6 +125,33 @@ main
     margin-top: 15rem
     position: relative
     min-height: 50vh
+    h2
+        padding-top: 1em !important
+        color: $secondary-color
+
+    .hr-plans
+        border-top: 1px solid $secondary-color
+        width: 20%
+        margin: 15px auto
+        
+
+    .plans_card
+        background: white
+        padding: 3rem
+        border-radius: 10px
+        margin: 20px 0
+        box-shadow: -2px 2px 6px gray
+        h3
+            color: $secondary-color
+            font-weight: bold
+            margin: 10px 0
+        .plans-bags
+            li
+                margin: 5px 0
+                color: $secondary-color
+                font-weight: bold
+        
+
     .col-card
         margin-top: 5rem
         display: flex
@@ -162,16 +193,40 @@ main
     .plan-button
         display: flex
         justify-content: center
-        margin-top: 6em
+        margin-top: 1em
         button
             color: white
             background: $secondary-color
             font-size: 1.2em
             padding: .7em 1em
-            margin-bottom: 5em
+            margin-bottom: 2em
             transition: .3s
             &:hover
                 background-color: #ff1e28
+
+.inst-plans
+    background: url('../assets/bg-ice.jpg')
+    min-height: 120px
+    background-size: cover
+    padding: 3rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +for-phone-only
+        display: block
+        text-align: center
+    button
+        color: white
+        border: none
+        background: $secondary-color
+        font-size: 1.2em
+        padding: .7em 1em
+        transition: .3s
+        +for-phone-only
+            margin-top: 20px
+        &:hover
+            background-color: #ff1e28
+            color: white
 
 /////////
 .clients
