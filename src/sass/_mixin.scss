@@ -34,3 +34,9 @@
   @mixin re-for-ipad {
     @media (min-width: 992px) { @content; }
   }
+  @mixin re-for-height {
+    @media (max-height: 750px) { @content; }
+  }
+  @mixin re-for-height2 {
+    @media (max-height: 468px) { @content; }
+  }
